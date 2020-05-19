@@ -1,0 +1,119 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'Inventory', 
+    typeNamePlural: 'Inventorys', 
+    title: {
+      type: #STANDARD, 
+      label: 'Inventory', 
+      value: 'InventoryId'
+    }
+  }
+}
+annotate view ZRAP_C_Inventory_CG1 with
+{
+  @UI.hidden: true
+  CreatedAt;
+  
+  @UI.hidden: true
+  CreatedBy;
+  
+  @UI.lineItem: [ {
+    position: 20 , 
+    importance: #HIGH, 
+    label: 'InventoryId'
+  } ]
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'InventoryId'
+  } ]
+  InventoryId;
+  
+  @UI.hidden: true
+  LastChangedAt;
+  
+  @UI.hidden: true
+  LastChangedBy;
+  
+  @UI.lineItem: [ {
+    position: 80 , 
+    importance: #HIGH, 
+    label: 'NotAvailable'
+  } ]
+  @UI.identification: [ {
+    position: 80 , 
+    label: 'NotAvailable'
+  } ]
+  NotAvailable;
+  
+  @UI.lineItem: [ {
+    position: 30 , 
+    importance: #HIGH, 
+    label: 'ProductId'
+  } ]
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'ProductId'
+  } ]
+  ProductId;
+  
+  @UI.lineItem: [ {
+    position: 40 , 
+    importance: #HIGH, 
+    label: 'Quantity'
+  } ]
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Quantity'
+  } ]
+  Quantity;
+  
+  @UI.lineItem: [ {
+    position: 60 , 
+    importance: #HIGH, 
+    label: 'QuantityInWords'
+  } ]
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'QuantityInWords'
+  } ]
+  QuantityInWords;
+  
+  @UI.lineItem: [ {
+    position: 50 , 
+    importance: #HIGH, 
+    label: 'QuantityUnit'
+  } ]
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'QuantityUnit'
+  } ]
+  QuantityUnit;
+  
+  @UI.lineItem: [ {
+    position: 70 , 
+    importance: #HIGH, 
+    label: 'Remark'
+  } ]
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'Remark'
+  } ]
+  Remark;
+  
+  @UI.hidden: true
+  @UI.facet: [ {
+    id: 'idCollection', 
+    type: #COLLECTION, 
+    label: 'Inventory', 
+    position: 10 
+  }, 
+  {
+    id: 'idIdentification', 
+    parentId: 'idCollection', 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'General Information', 
+    position: 10 
+  } ]
+  Uuid;
+}

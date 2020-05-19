@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCO_NUMBER_CONVERSION_SOAP_TYP</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Proxy Class (generated)</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <RSTAT>P</RSTAT>
+    <CLSPROXY>X</CLSPROXY>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCO_NUMBER_CONVERSION_SOAP_TYP</CLSNAME>
+     <CMPNAME>NUMBER_TO_DOLLARS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the non-zero dollar amount of the passed number.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCO_NUMBER_CONVERSION_SOAP_TYP</CLSNAME>
+     <CMPNAME>NUMBER_TO_WORDS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the word corresponding to the positive number passed</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,28 @@
+implementation managed;
+define behavior for ZRAP_I_INVENTORY_CG1 alias Inventory
+implementation in class ZRAP_CL_BIL_Inventory_CG1 unique
+persistent table zrap_inven_cg1
+lock master
+{
+  field ( readonly ) InventoryId;
+  field ( numbering : managed, readonly ) Uuid;
+  create; update; delete;
+
+  mapping for ZRAP_INVEN_CG1
+  {
+    Uuid = UUID;
+    InventoryId = INVENTORY_ID;
+    ProductId = PRODUCT_ID;
+    Quantity = QUANTITY;
+    QuantityUnit = QUANTITY_UNIT;
+    QuantityInWords = QUANTITY_IN_WORDS;
+    Remark = REMARK;
+    NotAvailable = NOT_AVAILABLE;
+    CreatedBy = CREATED_BY;
+    CreatedAt = CREATED_AT;
+    LastChangedBy = LAST_CHANGED_BY;
+    LastChangedAt = LAST_CHANGED_AT;
+  }
+  determination CalculateSemanticKey on modify { create; }
+  determination fillQuantityInWords on modify { field Quantity; }
+}

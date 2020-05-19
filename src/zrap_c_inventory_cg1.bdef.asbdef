@@ -1,0 +1,12 @@
+implementation projection;
+define behavior for ZRAP_C_INVENTORY_CG1 alias Inventory
+{
+
+
+ use create;
+
+ use update;
+
+ use delete;
+
+}

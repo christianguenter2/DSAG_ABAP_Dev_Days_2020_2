@@ -1,0 +1,5 @@
+@EndUserText.label: 'ZRAP_UI_Inventory_M_CG1'
+define service ZRAP_UI_Inventory_M_CG1 {
+  expose ZRAP_C_INVENTORY_CG1 as Inventory;
+  expose zrap_ce_products_CG1 as Products;
+}
